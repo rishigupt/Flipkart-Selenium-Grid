@@ -21,4 +21,8 @@ public class DummyClass {
 
     }
 
+    public void dummy(){
+        
+    }
+
 }
