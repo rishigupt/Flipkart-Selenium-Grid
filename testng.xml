@@ -5,20 +5,20 @@
         <parameter name="browser"  value="CHROME"/>
         <classes>
             <class name="org.tests.FirstTest" >
-            <!--<methods>
+            <methods>
                 <include name="addProduct" />
-            </methods>-->
+            </methods>
             </class>
         </classes>
     </test>
-    <test name="Edge" parallel="methods">
+  <!--  <test name="Edge" parallel="methods">
         <parameter name="browser"  value="EDGE"/>
         <classes>
             <class name="org.tests.FirstTest" >
-               <!-- <methods>
+               &lt;!&ndash; <methods>
                     <include name="addProduct" />
-                </methods>-->
+                </methods>&ndash;&gt;
             </class>
         </classes>
-    </test>
+    </test>-->
 </suite>
