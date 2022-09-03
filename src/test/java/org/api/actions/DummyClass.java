@@ -25,4 +25,8 @@ public class DummyClass {
         System.out.println("dummy");
     }
 
+    public void newDummy(){
+        System.out.println("NewDummy");
+    }
+
 }
