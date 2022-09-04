@@ -4,17 +4,17 @@
     <test name="Chrome" parallel="methods">
         <parameter name="browser"  value="CHROME"/>
         <classes>
-            <class name="org.tests.FirstTest" >
-            <methods>
+            <class name="org.selenium.tests.FirstTest" >
+            <!--<methods>
                 <include name="addProduct" />
-            </methods>
+            </methods>-->
             </class>
         </classes>
     </test>
-  <!--  <test name="Edge" parallel="methods">
+   <!-- <test name="Edge" parallel="methods">
         <parameter name="browser"  value="EDGE"/>
         <classes>
-            <class name="org.tests.FirstTest" >
+            <class name="org.selenium.tests.FirstTest" >
                &lt;!&ndash; <methods>
                     <include name="addProduct" />
                 </methods>&ndash;&gt;

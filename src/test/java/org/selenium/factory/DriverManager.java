@@ -1,4 +1,4 @@
-package org.factory;
+package org.selenium.factory;
 
 import org.openqa.selenium.WebDriver;
 

@@ -1,6 +1,6 @@
-package org.base;
+package org.selenium.base;
 
-import org.utils.ConfigLoader;
+import org.selenium.utils.ConfigLoader;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

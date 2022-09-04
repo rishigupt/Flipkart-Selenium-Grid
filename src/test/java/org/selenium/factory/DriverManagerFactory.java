@@ -1,6 +1,6 @@
-package org.factory;
+package org.selenium.factory;
 
-import org.constants.DriverType;
+import org.selenium.constants.DriverType;
 
 public class DriverManagerFactory {
     public static DriverManager getManager(DriverType driverType){

@@ -1,4 +1,4 @@
-package org.objects;
+package org.selenium.objects;
 
 public class LoginData {
 

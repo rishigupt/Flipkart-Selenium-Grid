@@ -1,4 +1,4 @@
-package org.utils;
+package org.selenium.utils;
 
 import com.github.javafaker.Faker;
 

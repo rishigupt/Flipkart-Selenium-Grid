@@ -1,9 +1,10 @@
-package org.base;
+package org.selenium.base;
 
 import io.restassured.http.Cookies;
 import org.apache.commons.io.FileUtils;
-import org.constants.DriverType;
-import org.factory.DriverManagerFactory;
+import org.selenium.constants.DriverType;
+import org.selenium.factory.DriverManagerFactory;
+import org.selenium.utils.CookieUtils;
 import org.openqa.selenium.Cookie;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -13,7 +14,6 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
-import org.utils.CookieUtils;
 import ru.yandex.qatools.ashot.AShot;
 import ru.yandex.qatools.ashot.Screenshot;
 import ru.yandex.qatools.ashot.shooting.ShootingStrategies;

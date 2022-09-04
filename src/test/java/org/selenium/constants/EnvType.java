@@ -1,4 +1,4 @@
-package org.constants;
+package org.selenium.constants;
 
 public enum EnvType {
     PROD,

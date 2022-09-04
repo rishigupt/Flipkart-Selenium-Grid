@@ -1,4 +1,4 @@
-package org.utils;
+package org.selenium.utils;
 
 import io.restassured.http.Cookies;
 import org.openqa.selenium.Cookie;

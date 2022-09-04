@@ -1,7 +1,7 @@
-package org.pages;
+package org.selenium.pages;
 
-import org.base.BasePage;
-import org.objects.LoginData;
+import org.selenium.objects.LoginData;
+import org.selenium.base.BasePage;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
