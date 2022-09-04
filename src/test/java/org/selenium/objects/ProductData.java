@@ -1,6 +1,6 @@
-package org.objects;
+package org.selenium.objects;
 
-import org.utils.JacksonUtils;
+import org.selenium.utils.JacksonUtils;
 
 import java.io.IOException;
 

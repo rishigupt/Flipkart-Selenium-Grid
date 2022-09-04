@@ -1,6 +1,6 @@
-package org.pages;
+package org.selenium.pages;
 
-import org.base.BasePage;
+import org.selenium.base.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;

@@ -1,12 +1,13 @@
-package org.tests;
-import org.pages.AccountPage;
-import org.base.BaseTest;
-import org.objects.LoginData;
-import org.objects.ProductData;
-import org.pages.HomePage;
-import org.utils.JacksonUtils;
+package org.selenium.tests;
+import org.selenium.objects.LoginData;
+import org.selenium.objects.ProductData;
+import org.selenium.pages.AccountPage;
+import org.selenium.pages.HomePage;
+import org.selenium.utils.JacksonUtils;
+import org.selenium.base.BaseTest;
 import io.qameta.allure.*;
 import org.testng.annotations.Test;
+
 import java.io.IOException;
 
 @Epic("Flipkart Epic")
