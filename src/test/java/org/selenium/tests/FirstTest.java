@@ -47,7 +47,6 @@ public class FirstTest extends BaseTest {
     @Test(description = "should be able to add product")
     public void addProduct() throws IOException {
         ProductData productData = new ProductData(1215);
-
         HomePage homePage = new HomePage(getDriver()).load();
         homePage.closeLoginPopup();
         homePage.searchProduct(productData.getName())
