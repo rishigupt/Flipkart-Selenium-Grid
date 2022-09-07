@@ -11,14 +11,14 @@
             </class>
         </classes>
     </test>
-   <!-- <test name="Edge" parallel="methods">
+    <test name="Edge" parallel="methods">
         <parameter name="browser"  value="EDGE"/>
         <classes>
             <class name="org.selenium.tests.FirstTest" >
-               &lt;!&ndash; <methods>
+               <!-- <methods>
                     <include name="addProduct" />
-                </methods>&ndash;&gt;
+                </methods>-->
             </class>
         </classes>
-    </test>-->
+    </test>
 </suite>

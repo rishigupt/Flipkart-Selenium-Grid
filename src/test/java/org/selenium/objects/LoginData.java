@@ -18,6 +18,12 @@ public class LoginData {
         this.email = email;
     }
 
+    //Parameterized Constructor
+    public LoginData(String username, String password) {
+        this.username = username;
+        this.password = password;
+    }
+
     public String getUsername() {
         return username;
     }

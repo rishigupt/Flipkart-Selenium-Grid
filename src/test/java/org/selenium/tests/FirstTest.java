@@ -20,17 +20,17 @@ public class FirstTest extends BaseTest {
     @Test
     public void loginAndLogout() throws IOException {
         //calling setters method
-        /*LoginDetails loginDetails = new LoginDetails().
-                setUserName("6351991983").
-                setPassword("oct-2019");*/
+        /*LoginData loginData = new LoginData().
+                setUsername("UserName").
+                setPassword("Password");*/
 
-        //providing date using parameterized constructor
-        //LoginDetails loginDetails = new LoginDetails("6351991983" , "oct-2019");
+        //providing data using parameterized constructor
+        /*LoginData loginData = new LoginData("UserName" , "Password");*/
 
         //Parsing the json object and converting it to java object
         LoginData loginData = JacksonUtils.deserializeJson("loginDetails.json", LoginData.class);
         HomePage homePage = new HomePage(getDriver()).load();
-        //using the java object loginData via setLoginDetails method
+        //using the java object loginData via HomePage.setLoginDetails method
         AccountPage accountPage = homePage.setLoginDetails(loginData).
                 clickLoginBtn().
                 mouseHoverMyAccount().
