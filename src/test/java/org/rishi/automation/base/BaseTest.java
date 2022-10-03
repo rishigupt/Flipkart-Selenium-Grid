@@ -1,11 +1,8 @@
-package org.selenium.base;
+package org.rishi.automation.base;
 
-import io.restassured.http.Cookies;
 import org.apache.commons.io.FileUtils;
-import org.selenium.constants.DriverType;
-import org.selenium.factory.DriverManagerFactory;
-import org.selenium.utils.CookieUtils;
-import org.openqa.selenium.Cookie;
+import org.rishi.automation.browserfactory.DriverManagerFactory;
+import org.rishi.automation.constants.DriverType;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -22,7 +19,6 @@ import javax.imageio.ImageIO;
 import java.io.File;
 import java.io.IOException;
 import java.util.Date;
-import java.util.List;
 
 public class BaseTest {
 
@@ -39,18 +35,17 @@ public class BaseTest {
     @Parameters("browser")
     @BeforeMethod
     public void startDriver(@Optional String browser){
-//        browser = System.getProperty("browser", browser);
         if (browser == null) browser = "CHROME";
         setDriver(DriverManagerFactory.getManager(DriverType.valueOf(browser)).createDriver());
-        System.out.println("CURRENT THREAD: " + Thread.currentThread().getId() + ", " +
-        "Driver = " + getDriver());
+        /*System.out.println("CURRENT THREAD: " + Thread.currentThread().getId() + ", " +
+        "Driver = " + getDriver());*/
     }
 
     @Parameters("browser")
     @AfterMethod
     public void quitDriver(@Optional String browser, ITestResult result) throws IOException {
-        System.out.println("CURRENT THREAD: " + Thread.currentThread().getId() + ", " +
-                "Driver = " + getDriver());
+        /*System.out.println("CURRENT THREAD: " + Thread.currentThread().getId() + ", " +
+                "Driver = " + getDriver());*/
         if (result.getStatus() == ITestResult.FAILURE){
             Date date = new Date();
             File destFile = new File("snapshot" + File.separator + browser + File.separator +
@@ -78,14 +73,6 @@ public class BaseTest {
             ImageIO.write(screenshot.getImage(), "PNG", destFile);
         } catch (IOException e) {
             e.printStackTrace();
-        }
-    }
-
-
-    public void injectCookiesToBrowser(Cookies cookies){
-        List<Cookie> seleniumCookies = new CookieUtils().convertRestAssuredCookiesToSeleniumCookies(cookies);
-        for (Cookie cookie: seleniumCookies){
-            getDriver().manage().addCookie(cookie);
         }
     }
 

@@ -1,4 +1,4 @@
-package org.selenium.constants;
+package org.rishi.automation.constants;
 
 public enum DriverType {
     CHROME,

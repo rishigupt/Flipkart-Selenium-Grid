@@ -1,4 +1,4 @@
-package org.selenium.factory;
+package org.rishi.automation.browserfactory;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;

@@ -1,4 +1,4 @@
-package org.selenium.utils;
+package org.rishi.automation.utils;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
