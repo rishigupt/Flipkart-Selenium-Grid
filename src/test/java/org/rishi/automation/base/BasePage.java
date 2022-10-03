@@ -1,6 +1,6 @@
-package org.selenium.base;
+package org.rishi.automation.base;
 
-import org.selenium.utils.ConfigLoader;
+import org.rishi.automation.utils.ConfigLoader;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

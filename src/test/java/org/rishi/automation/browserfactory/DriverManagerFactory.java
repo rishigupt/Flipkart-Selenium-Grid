@@ -1,6 +1,6 @@
-package org.selenium.factory;
+package org.rishi.automation.browserfactory;
 
-import org.selenium.constants.DriverType;
+import org.rishi.automation.constants.DriverType;
 
 public class DriverManagerFactory {
     public static DriverManager getManager(DriverType driverType){
@@ -10,7 +10,7 @@ public class DriverManagerFactory {
             case EDGE:
                 return new EdgeDriverManager();
             default:
-                throw new IllegalStateException("Invalid dirver: " + driverType);
+                throw new IllegalStateException("Invalid driver: " + driverType);
         }
     }
 }

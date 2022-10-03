@@ -1,6 +1,6 @@
-package org.selenium.objects;
+package org.rishi.automation.objects;
 
-import org.selenium.utils.JacksonUtils;
+import org.rishi.automation.utils.JacksonUtils;
 
 import java.io.IOException;
 

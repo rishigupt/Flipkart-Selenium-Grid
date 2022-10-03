@@ -1,6 +1,6 @@
-package org.selenium.utils;
+package org.rishi.automation.utils;
 
-import org.selenium.constants.EnvType;
+import org.rishi.automation.constants.EnvType;
 
 import java.util.Properties;
 
