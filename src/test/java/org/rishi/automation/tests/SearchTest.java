@@ -1,19 +1,18 @@
 package org.rishi.automation.tests;
 
+
 import org.rishi.automation.objects.ProductData;
-import org.rishi.automation.pages.AccountPage;
-import org.rishi.automation.objects.LoginData;
 import org.rishi.automation.pages.HomePage;
-import org.rishi.automation.utils.JacksonUtils;
 import org.rishi.automation.base.BaseTest;
 import io.qameta.allure.*;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
+import java.net.MalformedURLException;
 
 public class SearchTest extends BaseTest{
 
-    public SearchTest() {
+    public SearchTest() throws MalformedURLException {
     }
 
 
@@ -32,5 +31,12 @@ public class SearchTest extends BaseTest{
         homePage.searchProduct(productData.getName())
                 .clickSearchButton()
                 .sortByLowest();
+        System.out.println("first test");
+    }
+
+    @Test(enabled = true)
+    public void gridCases() {
+            getDriver().get("https://google.com");
+            System.out.println(getDriver().getTitle());
     }
 }

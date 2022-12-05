@@ -9,12 +9,14 @@ import io.qameta.allure.*;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
+import java.net.MalformedURLException;
 
 @Epic("Flipkart Epic")
 @Feature("Search Function Feature")
 public class LoginTest extends BaseTest {
 
-    public LoginTest() {
+    public LoginTest() throws MalformedURLException {
+        //super();
     }
 
     @Test
@@ -31,35 +33,6 @@ public class LoginTest extends BaseTest {
                 .clickLogoutBtn();
     }
 
-/*    @Test(enabled = false)
-    public void loginAndLogoutWithSetters() {
-
-        LoginData loginData = new LoginData().
-                setUsername("lonor10769@dnitem.com").
-                setPassword("jaiho");
-        HomePage homePage = new HomePage(getDriver()).load();
-        AccountPage accountPage = homePage.setLoginDetails(loginData)
-                .clickLoginBtn()
-                .mouseHoverMyAccount()
-                .clickMyProfile();
-        accountPage
-                .isLoaded()
-                .clickLogoutBtn();
-    }*/
-
-/*    @Test
-    public void loginAndLogoutWithConstructor() {
-
-        LoginData loginData = new LoginData("lonor10769@dnitem.com" , "jaiho");
-        HomePage homePage = new HomePage(getDriver()).load();
-        AccountPage accountPage = homePage.setLoginDetails(loginData)
-                .clickLoginBtn()
-                .mouseHoverMyAccount()
-                .clickMyProfile();
-        accountPage
-                .isLoaded()
-                .clickLogoutBtn();
-    }*/
 
 
 
