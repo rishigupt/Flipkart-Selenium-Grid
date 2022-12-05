@@ -13,13 +13,13 @@ public class HomePage extends BasePage {
     private final By loginIdFld = By.xpath("//div[@class='IiD88i _351hSN']/input[@type='text']");
     private final By loginPwFld = By.xpath("//input[@type='password']");
     private final By loginBtn = By.xpath("//button[@class='_2KpZ6l _2HKlqd _3AWRsL']");
-    private By myAccount = By.xpath("//div[text()='My Account']");
-    private By myProfile = By.xpath("//div[text()='My Profile']");
-    private By closeLoginPopup = By.xpath("//button[@class='_2KpZ6l _2doB4z']");
-    private By searchForProducts = By.xpath("//input[@type='text']");
-    private By searchButton = By.xpath("//button[@type='submit']");
-    private By sortByLowestPrice = By.xpath("//div[text()='Price -- Low to High']");
-    private By loginPopup = By.cssSelector("div._2MlkI1");
+    private final By myAccount = By.xpath("//div[text()='My Account']");
+    private final By myProfile = By.xpath("//div[text()='My Profile']");
+    private final By closeLoginPopup = By.xpath("//button[@class='_2KpZ6l _2doB4z']");
+    private final By searchForProducts = By.xpath("//input[@type='text']");
+    private final By searchButton = By.xpath("//button[@type='submit']");
+    private final By sortByLowestPrice = By.xpath("//div[text()='Price -- Low to High']");
+    private final By loginPopup = By.cssSelector("div._2MlkI1");
 
     public HomePage(WebDriver driver) {
         super(driver);
